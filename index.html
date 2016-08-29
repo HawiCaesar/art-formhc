@@ -9,7 +9,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular&subset=Latin,Cyrillic"> -->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="response-gallery.css" rel="stylesheet">
+    <link href="css/response-gallery.css" rel="stylesheet">
     <style>
         .navbar-default .navbar-nav>li>a {
             color: white;
@@ -54,7 +54,7 @@ display: none;
                     <ul class="nav navbar-nav" style="padding-left:23%;color:white;">
                         <li id="onstage-nav"><a>On Stage</a></li>
                         <li id="about-nav"><a>About</a></li>
-                        <li><a>Gallery</a></li>
+                        <li id="gallery-nav"><a>Gallery</a></li>
                         <li><a>Different Angle</a></li>
                         <li><a>Contact</a></li>
                         <!-- <li class="dropdown">
@@ -110,8 +110,8 @@ display: none;
         <br />
         <br /> -->
 
-        <div class="row" style="margin-right:0;border:1px solid black;">
-          <div style="border:1px solid black;">
+        <div class="row" style="margin-right:0;" id="gallery">
+          <div style="">
               <ul class="rslides img-responsive center-block wrapper" id="slider2">
                 <li  ><img src="http://www.responsiveslides.com/1.jpg" alt=""></li>
                 <li  ><img src="http://www.responsiveslides.com/2.jpg" alt=""></li>
@@ -131,7 +131,7 @@ display: none;
     <script>
       $('.img-fluid').parallax(
         {
-          imageSrc: 'dramsoc-vera2.jpg',
+          imageSrc: 'images/dramsoc-vera2.jpg',
           naturalWidth: 6000,
           naturalHeight: 4000
         });
@@ -146,6 +146,8 @@ display: none;
             }, 1000);
           $('#onstage-nav').addClass('active');
           $('#about-nav').removeClass('active');
+          $('#galery-nav').removeClass('active');
+
 
         })
 
@@ -157,6 +159,18 @@ display: none;
             }, 1000);
           $('#onstage-nav').removeClass('active');
           $('#about-nav').addClass('active');
+          $('#galery-nav').removeClass('active');
+
+        })
+
+        $('#gallery-nav').click(function(){
+            $('html, body').animate({
+                scrollTop: $('#gallery').offset().top
+                },1000);
+
+            $('#onstage-nav').removeClass('active');
+            $('#about-nav').removeClass('active');
+            $('#galery-nav').addClass('active');
 
         })
 

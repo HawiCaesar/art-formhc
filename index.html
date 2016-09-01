@@ -24,16 +24,16 @@
         }
 
         #parallax-window {
-    min-height: 800px;
-    background: transparent;
-}
-.rslides_tabs .rslides1_tabs{
-display: none;
-}
-.center-block {
-    display: block;
-    margin: 0 auto;
-}
+            min-height: 800px;
+            background: transparent;
+        }
+        .rslides_tabs .rslides1_tabs{
+        display: none;
+        }
+        .center-block {
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 
@@ -110,19 +110,29 @@ display: none;
         <br />
         <br /> -->
 
-        <div class="row" style="margin-right:0;" id="gallery">
-          <div style="">
-              <ul class="rslides img-responsive center-block wrapper" id="slider2">
-                <li  ><img src="http://www.responsiveslides.com/1.jpg" alt=""></li>
-                <li  ><img src="http://www.responsiveslides.com/2.jpg" alt=""></li>
-                <li  ><img src="http://www.responsiveslides.com/3.jpg" alt=""></li>
-              </ul>
-          </div>
+        <div class="row" style="margin-right:0; padding:40px 0px 30px 0px" id="gallery">
+            <h2 style="text-align:center">Photos of Past Plays</h2>
+            <div style=""> 
+                <ul class="rslides img-responsive center-block wrapper" id="slider2">
+                    <li  ><img src="http://www.responsiveslides.com/1.jpg" alt=""></li>
+                    <li  ><img src="http://www.responsiveslides.com/2.jpg" alt=""></li>
+                    <li  ><img src="http://www.responsiveslides.com/3.jpg" alt=""></li>
+                </ul>
+            </div>
           
         </div>
         <br />
         <br />
 
+        <div id="diff_angle" data-parallax="scroll" style="width:100%;min-height: 800px;background: transparent;"></div>
+
+        <div class="jumbotron" style="height:100%;" id="about">
+            <!-- <h2><center>About</center></h2> -->
+            <br />
+            <p style="margin-left:10%;margin-right:10%;text-align:justify;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod libero enim, rutrum vehicula libero tempor eu. Sed ultricies vulputate nibh et pharetra. Mauris neque quam, vulputate at quam quis, maximus consequat lacus. Vivamus condimentum scelerisque dolor, a mattis nisl dignissim condimentum. Suspendisse potenti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod libero enim, rutrum vehicula libero tempor eu. Sed ultricies vulputate nibh et pharetra. Mauris neque quam, vulputate at quam quis, maximus consequat lacus. Vivamus condimentum scelerisque dolor, a mattis nisl dignissim condimentum. Suspendisse potenti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod libero enim, rutrum vehicula libero tempor eu. Sed ultricies vulputate nibh et pharetra. Mauris neque quam, vulputate at quam quis, maximus consequat lacus. Vivamus condimentum scelerisque dolor, a mattis nisl dignissim condimentum. Suspendisse potenti.</p>
+            <hr class="m-y-2">
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -131,10 +141,18 @@ display: none;
     <script>
       $('.img-fluid').parallax(
         {
-          imageSrc: 'images/dramsoc-vera2.jpg',
-          naturalWidth: 6000,
-          naturalHeight: 4000
-        });
+            imageSrc: 'images/dramsoc-vera2-min.jpg',
+            naturalWidth: 6000,
+            naturalHeight: 4000,
+            androidFix: true
+        })
+
+      $('#diff_angle').parallax({
+            imageSrc: 'images/csr-min.jpg',
+            naturalWidth: 3264,
+            naturalHeight: 2448,
+            androidFix:true
+      })
 
       $('document').ready(function(){
 

@@ -7,8 +7,11 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
     <meta name="author" content="HawiCaesar" />
     <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular&subset=Latin,Cyrillic"> -->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="icon" href="images/dramsoc.ico">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="css/response-gallery.css" rel="stylesheet">
     <style>
         .navbar-default .navbar-nav>li>a {
@@ -37,9 +40,9 @@
     </style>
 </head>
 
-<body style="font-family: 'Varela Round', sans-serif;">
+<body style="font-family: 'Asap', sans-serif;">
     <div id="main">
-        <nav class="navbar navbar-default navbar-fixed-top" style="color:white;background-color:rgba(0,0,0,.7);height:10%;border:0px; font-size:17px;">
+        <nav class="navbar navbar-default navbar-fixed-top" style="color:white;background-color:rgba(0,0,0,1);height:10%;border:0px; font-size:17px;">
             <div class="container-fluid" style="margin-top:0.7%;">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -50,13 +53,13 @@
                     </button>
                     <a class="navbar-brand" href="#" style="font-size:24px;color:white;">Dramsoc</a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
+                <div id="navbar" class="navbar-collapse collapse" style="background-color:#000">
                     <ul class="nav navbar-nav" style="padding-left:23%;color:white;">
                         <li id="onstage-nav"><a>On Stage</a></li>
                         <li id="about-nav"><a>About</a></li>
                         <li id="gallery-nav"><a>Gallery</a></li>
-                        <li><a>Different Angle</a></li>
-                        <li><a>Contact</a></li>
+                        <li id="diff-angle-nav"><a>Different Angle</a></li>
+                        <li id="contact-nav"><a>Contact</a></li>
                         <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -75,25 +78,41 @@
             </div>
             <!--/.container-fluid -->
         </nav>
-        <!-- <img class="img-fluid" src="royal.jpg" style="width:100%;"> -->
-        <div class="img-fluid" data-parallax="scroll"  style="width:100%;min-height: 800px;background: transparent;"></div>
+
+        <div class="row" style="margin-right: 0px">
+            <div class="mobile hidden-lg hidden-xl">
+                <img class="img-responsive" src="images/dramsoc-vera2-min.jpg" style="width:100%;">
+            </div>
+            <div class="hidden-sm hidden-xs hidden-md visible-lg-block visible-xl-block">
+                <div class="img-responsive" id="dv" data-parallax="scroll"  style="width:100%;min-height: 800px;background: transparent;"></div>
+            </div>
+        </div>
 
         <div class="jumbotron" style="height:100%;">
             <h1 class="display-3"><center>Strathmore Drama Society</center></h1>
             <h3><center>Take It To The Next Level</center></h3>
             <hr class="m-y-2">
-            <div id="onstage" style="height:10px;padding:13px;"></div>
+            <div id="onstage" style="height:10px;padding:13px;"></div> <!-- I feel this is a hacky way -->
         </div>
         
 
         <div class="row" style="margin-right: 0px">
             <!-- <h2><center>On Stage</center></h2> -->
-            <div class="col-xs-10 col-sm-4" style="margin-left:10%;border:1px solid red; ">
-                <img class="img-responsive" width="440" height="600" src="images/ladyfromsea.jpg">
+            <div class="col-xs-10 col-sm-4" style="margin-left:10%;">
+                <img class="img-responsive center-block wrapper" width="440" height="600" src="images/ladyfromsea.jpg">
             </div>
-            <div class="col-xs-10 col-sm-4" style="font-size:24px;margin-left:10%;border:1px solid green;">
+            <div class="col-xs-10 col-sm-4" style="font-size:24px;margin-left:10%;">
                 <p style="text-align:justify;">Confronted by the skeletons in her closet, Elida Wema finds herself haunted by secrets from her past; secrets she thought­ so well hidden. A battle that puts the ideals of love, betrayal, temptation and marriage to the test ensues. With it, a tough decision has to be made: whether to stay with her old husband who loves her so­ much but with whom she feels like a prisoner or to follow a stranger whom she barely knows but promises her freedom, freedom that comes at a great cost.</p>
                 <button type="button" class="btn btn-primary">Buy Tickets</button>
+                <a class="btn btn-social-icon btn-lg btn-twitter">
+                    <span class="fa fa-twitter"></span>
+                </a>
+                <a class="btn btn-social-icon btn-lg btn-facebook">
+                    <span class="fa fa-facebook"></span>
+                </a>
+                <a class="btn btn-social-icon btn-lg btn-instagram">
+                    <span class="fa fa-instagram"></span>
+                </a>
             </div>
         </div>
         <br />
@@ -123,23 +142,31 @@
         </div>
         <br />
         <br />
+        <div id="diff-angle" style="height:10px;padding:13px;"></div> <!-- I feel this is a hacky way -->
+        <div class="row" style="margin-right: 0px">
+            <div class="mobile hidden-lg hidden-xl">
+                <img class="img-responsive" src="images/csr-min.jpg" style="width:100%;">
+            </div>
+            <div class="hidden-sm hidden-xs hidden-md visible-lg-block visible-xl-block">
+                <div id="diff_angle" data-parallax="scroll" style="width:100%;min-height: 800px;background: transparent;"></div>
+            </div>
+        </div>
 
-        <div id="diff_angle" data-parallax="scroll" style="width:100%;min-height: 800px;background: transparent;"></div>
-
-        <div class="jumbotron" style="height:100%;" id="about">
-            <!-- <h2><center>About</center></h2> -->
+        <div class="jumbotron" style="height:100%;margin-bottom: 0px;" id="about">
             <br />
             <p style="margin-left:10%;margin-right:10%;text-align:justify;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod libero enim, rutrum vehicula libero tempor eu. Sed ultricies vulputate nibh et pharetra. Mauris neque quam, vulputate at quam quis, maximus consequat lacus. Vivamus condimentum scelerisque dolor, a mattis nisl dignissim condimentum. Suspendisse potenti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod libero enim, rutrum vehicula libero tempor eu. Sed ultricies vulputate nibh et pharetra. Mauris neque quam, vulputate at quam quis, maximus consequat lacus. Vivamus condimentum scelerisque dolor, a mattis nisl dignissim condimentum. Suspendisse potenti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod libero enim, rutrum vehicula libero tempor eu. Sed ultricies vulputate nibh et pharetra. Mauris neque quam, vulputate at quam quis, maximus consequat lacus. Vivamus condimentum scelerisque dolor, a mattis nisl dignissim condimentum. Suspendisse potenti.</p>
             <hr class="m-y-2">
         </div>
+
+        <iframe height="450" frameborder="0" style="border:0;width:100%" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJkapPSNIQLxgRPXnwo84Ni0A&key=AIzaSyCZHA-pyMbKVPOvxZvvJJe4-Cj3CMllVoE" allowfullscreen></iframe>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://pixelcog.github.io/parallax.js/js/parallax.min.js"></script>
     <script src="http://responsiveslides.com/responsiveslides.min.js?v=1.6"></script>
     <script>
-      $('.img-fluid').parallax(
+      $('#dv').parallax(
         {
             imageSrc: 'images/dramsoc-vera2-min.jpg',
             naturalWidth: 6000,
@@ -154,8 +181,13 @@
             androidFix:true
       })
 
+      $('.navbar-collapse a').click(function (e) {
+        $('.navbar-collapse').collapse('hide');
+      })
+
       $('document').ready(function(){
 
+        /* Hacky methods of accessing the navigations and showing where the user is */
         $('#onstage-nav').click(function(){
 
           $('html, body').animate({
@@ -165,6 +197,7 @@
           $('#onstage-nav').addClass('active');
           $('#about-nav').removeClass('active');
           $('#galery-nav').removeClass('active');
+          $('#diff-angle-nav').removeClass('active');
 
 
         })
@@ -177,6 +210,7 @@
             }, 1000);
           $('#onstage-nav').removeClass('active');
           $('#about-nav').addClass('active');
+          $('#diff-angle-nav').removeClass('active');
           $('#galery-nav').removeClass('active');
 
         })
@@ -189,6 +223,19 @@
             $('#onstage-nav').removeClass('active');
             $('#about-nav').removeClass('active');
             $('#galery-nav').addClass('active');
+            $('#diff-angle-nav').removeClass('active');
+
+        })
+
+        $('#diff-angle-nav').click(function(){
+            $('html, body').animate({
+                scrollTop: $('#diff-angle').offset().top
+                },1000);
+
+            $('#onstage-nav').removeClass('active');
+            $('#about-nav').removeClass('active');
+            $('#galery-nav').removeClass('active');
+            $('#diff-angle-nav').addClass('active');
 
         })
 

@@ -23,22 +23,27 @@
         .navbar-default .navbar-nav>li>a {
             color: white;
         }
-        .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-          color: black;
+        
+        .navbar-default .navbar-nav>.active>a,
+        .navbar-default .navbar-nav>.active>a:focus,
+        .navbar-default .navbar-nav>.active>a:hover {
+            color: black;
         }
         
         .navbar-default .navbar-nav>li>a:hover {
             background-color: #e7e7e7;
             color: black;
         }
-
+        
         #parallax-window {
             min-height: 800px;
             background: transparent;
         }
-        .rslides_tabs .rslides1_tabs{
-        display: none;
+        
+        .rslides_tabs .rslides1_tabs {
+            display: none;
         }
+        
         .center-block {
             display: block;
             margin: 0 auto;
@@ -65,7 +70,7 @@
                         <li id="about-nav"><a>About</a></li>
                         <li id="gallery-nav"><a>Gallery</a></li>
                         <li id="diff-angle-nav"><a>Different Angle</a></li>
-                        <li><a>Sponsors</a></li>
+                        <li id="sponsor-nav"><a>Sponsors</a></li>
                         <li id="contact-nav"><a>Contact</a></li>
                         <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -91,7 +96,7 @@
                 <img class="img-responsive" src="images/dramsoc-vera2-min.jpg" style="width:100%;">
             </div>
             <div class="hidden-sm hidden-xs hidden-md visible-lg-block visible-xl-block">
-                <div class="img-responsive" id="dv" data-parallax="scroll"  style="width:100%;min-height: 800px;background: transparent;"></div>
+                <div class="img-responsive" id="dv" data-parallax="scroll" style="width:100%;min-height: 800px;background: transparent;"></div>
             </div>
         </div>
 
@@ -99,9 +104,9 @@
             <h1 class="display-3"><center>Strathmore Drama Society</center></h1>
             <h3><center>Take It To The Next Level</center></h3>
             <hr class="m-y-2">
-            <div id="onstage" style="height:10px;padding:13px;"></div> <!-- I feel this is a hacky way -->
+            <div id="onstage" style="height:10px;padding:13px;"></div>
+            <!-- I feel this is a hacky way -->
         </div>
-        
 
         <div class="row" style="margin-right: 0px">
             <!-- <h2><center>On Stage</center></h2> -->
@@ -111,11 +116,12 @@
             <div class="col-xs-10 col-sm-4" style="font-size:24px;margin-left:10%;">
                 <p style="text-align:justify;">Confronted by the skeletons in her closet, Elida Wema finds herself haunted by secrets from her past; secrets she thought­ so well hidden. A battle that puts the ideals of love, betrayal, temptation and marriage to the test ensues. With it, a tough decision has to be made: whether to stay with her old husband who loves her so­ much but with whom she feels like a prisoner or to follow a stranger whom she barely knows but promises her freedom, freedom that comes at a great cost.</p>
                 <button type="button" class="btn btn-primary">Buy Tickets</button>
-                <a class="btn btn-social-icon btn-lg btn-twitter">
-                    <span class="fa fa-twitter fa-2x"></span>
-                </a>
+                <!-- ss -->
                 <a class="btn btn-social-icon btn-lg btn-facebook">
                     <span class="fa fa-facebook fa-2x"></span>
+                </a>
+                <a class="btn btn-social-icon btn-lg btn-twitter">
+                    <span class="fa fa-twitter fa-2x"></span>
                 </a>
                 <a class="btn btn-social-icon btn-lg btn-instagram">
                     <span class="fa fa-instagram fa-2x"></span>
@@ -138,18 +144,19 @@
 
         <div class="row" style="margin-right:0; padding:40px 0px 30px 0px" id="gallery">
             <h2 style="text-align:center">Photos of Past Plays</h2>
-            <div style=""> 
+            <div style="">
                 <ul class="rslides img-responsive center-block wrapper" id="slider2">
-                    <li  ><img src="http://www.responsiveslides.com/1.jpg" alt=""></li>
-                    <li  ><img src="http://www.responsiveslides.com/2.jpg" alt=""></li>
-                    <li  ><img src="http://www.responsiveslides.com/3.jpg" alt=""></li>
+                    <li><img src="http://www.responsiveslides.com/1.jpg" alt=""></li>
+                    <li><img src="http://www.responsiveslides.com/2.jpg" alt=""></li>
+                    <li><img src="http://www.responsiveslides.com/3.jpg" alt=""></li>
                 </ul>
             </div>
-          
+
         </div>
         <br />
         <br />
-        <div id="diff-angle" style="height:10px;padding:13px;"></div> <!-- I feel this is a hacky way -->
+        <div id="diff-angle" style="height:10px;padding:13px;"></div>
+        <!-- I feel this is a hacky way -->
         <div class="row" style="margin-right: 0px">
             <div class="mobile hidden-lg hidden-xl">
                 <img class="img-responsive" src="images/csr-min.jpg" style="width:100%;">
@@ -166,6 +173,7 @@
             <!-- <hr class="m-y-2"> -->
         </div>
 
+        <div id="sponsors" style="padding:10px"></div>
         <div class="row" style="margin-right:0;margin-left:10%;padding:40px 80px 80px 0px">
             <h2 style="text-align:center;">Sponsored By</h2>
             <div class="col-xs-10 col-sm-4">
@@ -179,8 +187,9 @@
             </div>
         </div>
 
-        <iframe height="450" frameborder="0" style="border:0;width:100%;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJm84KAfYQLxgRUBkzFSFB2C4&key=AIzaSyCZHA-pyMbKVPOvxZvvJJe4-Cj3CMllVoE" allowfullscreen></iframe>
-        
+        <div id="contacts" style="padding:10px;"></div>
+        <iframe height="450" frameborder="0" style="border:0;width:100%;display: block;margin: 0 auto;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJm84KAfYQLxgRUBkzFSFB2C4&key=AIzaSyCZHA-pyMbKVPOvxZvvJJe4-Cj3CMllVoE" allowfullscreen></iframe>
+
         <div class="jumbotron" style="margin-bottom:0px;">
             <h3 class="display-3"><center>Get In Touch Via</center></h3>
             <div class="row" style="margin-right:0px;font-size:18px;">
@@ -193,15 +202,15 @@
                     </a>
                     <a class="btn btn-social-icon btn-instagram btn-lg">
                         <span class="fa fa-instagram fa-4x"></span>
-                    </a> <br />
-                    OR <br />
-                    strathmoredramasociety@gmail.com
+                    </a>
+                    <br /> OR
+                    <br /> strathmoredramasociety@gmail.com
                 </div>
             </div>
         </div>
         <div class="row" style="margin-right:0px;color:white;background-color:#000;padding:40px;font-size:16px;">
-           <p class="text-center">Dramsoc | Copyright &copy; 2016</p>
-           <!-- <img class="img-responsive center-block wrapper" src="images/dramsoclogo1.png" /> -->
+            <p class="text-center">Dramsoc | Copyright &copy; 2016</p>
+            <!-- <img class="img-responsive center-block wrapper" src="images/dramsoclogo1.png" /> -->
         </div>
 
     </div>
@@ -210,90 +219,122 @@
     <script src="http://pixelcog.github.io/parallax.js/js/parallax.min.js"></script>
     <script src="http://responsiveslides.com/responsiveslides.min.js?v=1.6"></script>
     <script>
-      $('#dv').parallax(
-        {
+        $('#dv').parallax({
             imageSrc: 'images/dramsoc-vera2-min.jpg',
             naturalWidth: 6000,
             naturalHeight: 4000,
             androidFix: true
         })
 
-      $('#diff_angle').parallax({
+        $('#diff_angle').parallax({
             imageSrc: 'images/csr-min.jpg',
             naturalWidth: 3264,
             naturalHeight: 2448,
-            androidFix:true
-      })
-
-      $('.navbar-collapse a').click(function (e) {
-        $('.navbar-collapse').collapse('hide');
-      })
-
-      $('document').ready(function(){
-
-        /* Hacky methods of accessing the navigations and showing where the user is */
-        $('#onstage-nav').click(function(){
-
-          $('html, body').animate({
-            scrollTop: $("#onstage").offset().top
-            //window.scrollTo(500, 0);
-            }, 1000);
-          $('#onstage-nav').addClass('active');
-          $('#about-nav').removeClass('active');
-          $('#galery-nav').removeClass('active');
-          $('#diff-angle-nav').removeClass('active');
-
-
+            androidFix: true
         })
 
-        $('#about-nav').click(function(){
-
-          $('html, body').animate({
-            scrollTop: $("#about").offset().top
-            //window.scrollTo(500, 0);
-            }, 1000);
-          $('#onstage-nav').removeClass('active');
-          $('#about-nav').addClass('active');
-          $('#diff-angle-nav').removeClass('active');
-          $('#galery-nav').removeClass('active');
-
+        $('.navbar-collapse a').click(function(e) {
+            $('.navbar-collapse').collapse('hide');
         })
 
-        $('#gallery-nav').click(function(){
-            $('html, body').animate({
-                scrollTop: $('#gallery').offset().top
-                },1000);
+        $('document').ready(function() {
 
-            $('#onstage-nav').removeClass('active');
-            $('#about-nav').removeClass('active');
-            $('#galery-nav').addClass('active');
-            $('#diff-angle-nav').removeClass('active');
+            /* Hacky methods of accessing the navigations and showing where the user is */
+            $('#onstage-nav').click(function() {
+
+                $('html, body').animate({
+                    scrollTop: $("#onstage").offset().top
+                        //window.scrollTo(500, 0);
+                }, 1000);
+                $('#onstage-nav').addClass('active');
+                $('#about-nav').removeClass('active');
+                $('#gallery-nav').removeClass('active');
+                $('#diff-angle-nav').removeClass('active');
+                $('#sponsor-nav').removeClass('active');
+                $('#contact-nav').removeClass('active');
+
+            })
+
+            $('#about-nav').click(function() {
+
+                $('html, body').animate({
+                    scrollTop: $("#about").offset().top
+                        //window.scrollTo(500, 0);
+                }, 1000);
+                $('#onstage-nav').removeClass('active');
+                $('#about-nav').addClass('active');
+                $('#diff-angle-nav').removeClass('active');
+                $('#gallery-nav').removeClass('active');
+                $('#sponsor-nav').removeClass('active');
+                $('#contact-nav').removeClass('active');
+
+            })
+
+            $('#gallery-nav').click(function() {
+                $('html, body').animate({
+                    scrollTop: $('#gallery').offset().top
+                }, 1000);
+
+                $('#onstage-nav').removeClass('active');
+                $('#about-nav').removeClass('active');
+                $('#gallery-nav').addClass('active');
+                $('#diff-angle-nav').removeClass('active');
+                $('#sponsor-nav').removeClass('active');
+                $('#contact-nav').removeClass('active');
+
+            })
+
+            $('#diff-angle-nav').click(function() {
+                $('html, body').animate({
+                    scrollTop: $('#diff-angle').offset().top
+                }, 1000);
+
+                $('#onstage-nav').removeClass('active');
+                $('#about-nav').removeClass('active');
+                $('#gallery-nav').removeClass('active');
+                $('#diff-angle-nav').addClass('active');
+                $('#sponsor-nav').removeClass('active');
+                $('#contact-nav').removeClass('active');
+            })
+
+            $('#sponsor-nav').click(function() {
+                $('html, body').animate({
+                    scrollTop: $('#sponsors').offset().top
+                }, 1000);
+
+                $('#onstage-nav').removeClass('active');
+                $('#about-nav').removeClass('active');
+                $('#gallery-nav').removeClass('active');
+                $('#diff-angle-nav').removeClass('active');
+                $('#sponsor-nav').addClass('active');
+                $('#contact-nav').removeClass('active');
+
+            })
+
+            $('#contact-nav').click(function() {
+                $('html, body').animate({
+                    scrollTop: $('#contacts').offset().top
+                }, 1000);
+
+                $('#onstage-nav').removeClass('active');
+                $('#about-nav').removeClass('active');
+                $('#gallery-nav').removeClass('active');
+                $('#diff-angle-nav').removeClass('active');
+                $('#sponsor-nav').removeClass('active');
+                $('#contact-nav').addClass('active');
+
+            })
+
+            $("#slider2").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                maxwidth: 900,
+                namespace: "centered-btns"
+            })
 
         })
-
-        $('#diff-angle-nav').click(function(){
-            $('html, body').animate({
-                scrollTop: $('#diff-angle').offset().top
-                },1000);
-
-            $('#onstage-nav').removeClass('active');
-            $('#about-nav').removeClass('active');
-            $('#galery-nav').removeClass('active');
-            $('#diff-angle-nav').addClass('active');
-
-        })
-
-        $("#slider2").responsiveSlides({
-          auto: true,
-          pager: true,
-          nav: false,
-          speed: 500,
-          maxwidth: 900,
-          namespace: "centered-btns"
-        })
-
-      })
-
     </script>
 </body>
 
